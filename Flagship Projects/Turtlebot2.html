@@ -103,64 +103,34 @@
     <main id="main">
         <section>
             <div class="section-title">
-                <span>PROJECT GARUDA - DRONE DELIVE</span>
-                <h2> PROJECT GARUDA - DRONE DELIVE</h2>
+                <span>TurtleBot 2</span>
+                <h2> TurtleBot 2</h2>
             </div>
             <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-                <h2>Overview</h2>
-                <p>The aim is to develop a drone which is capable of delivering a package of 500 gm autonomously from point A to B.</p>
-            
-            <h2>Control Flow :</h2>
-            <ol>
-                <li>Drone receives GPS coordinates of destination via Android app or Web application.</li>
-                <li>It autonomously flies to the destination</li>
-                <li>It loiters over the destination looking for an AprilTag (visual marker only provided to customer).</li>
-                <li>Once AprilTag is detected, drone lands on it and drops the package.</li>
-                <li>After dropping the package, drone takes off again and returns to the launch position.</li>
-            </ol>
-            <h2>Hardware</h2>
-            <div>
-                <img src="../assets\img\Flagship_Projects\Garuda\1.jpg" style="float:right;width:40%;height:300px">
-                <ul style="margin-left:30px;width:40%">
-                        <li>Used a custom built quadcopter which uses an mRo Pixhawk flight controller alongwith <a href="https://www.hardkernel.com/main/products/prdt_info.php">ODroid XU4</a> 
-                            as the companion computer. 
-                            The ODroid runs Ubuntu Mate 16.04 and uses the MAVROS package on ROS Kinetic
-                             to communicate with the Pixhawk and to send commands to it.</li>
-                        <li>Some parts which were required like casing for ODroid, parts of the landing gear, etc. 
-                                were designed in SolidWorks and 3D printed using ABS material.</li>
-                        <li>Used the <a href="https://www.robotshop.com/products/tarot-iron-man-650-folding-carbon-fiber-quadcopter-frame">Tarot IronMan 650 frame</a>, 
-                                    <a herf="http://www.helipal.com/t-motor-mn4006-antigravity-high-power-brushless-motor-380kv.html">T-Motor Antigravity 4006 Brushless Motors</a>, 
-                                    <a htrf="http://www.helipal.com/hobbywing-xrotor-40a-esc.html">Hobbywing XRotor 40A ESCs</a> and 
-                                    <a href="http://www.helipal.com/tl100d03-tarot-1555-high-strength-plastic-propellers-foldable-cw-ccw.html">Tarot 1555 High Strength Plastic Propellers</a>.</li>
-                        <li>Designed a box which holds the package to be dropped and also houses the main 24V Li-Po battery and a fail-safe GPS tracker.</li>
-                </ul>
-            </div>
-            <br><br><br>
-            <h2>Cyber-Physical Architecture :</h2>
-            <div style="display:flex;justify-content: center;">
-                <img src="../assets\img\Flagship_Projects\Garuda\2.jpg">
-
-            </div>
-            <br><br>
-            For more info on off-board control of drone and simulation, refer <a href="https://akshayk07.weebly.com/offboard-control-of-pixhawk.html">this  site.</a>
-            <h2>Progress :</h2>
-            <ul style="margin-left:30px">
-                <li>Achieved delivery from A to B without obstacles in simulation and on hardware.</li>
-                <li>Implemented real-time tracking of drone by uploading GPS coordinates to AWS database in simulation.</li>
-                <li>Currently working on implementing real-time tracking on hardware.</li>
-            </ul>
-            <h2>Working Video:</h2>
-            <br><br><br>
-            <h2>Team :</h2>
-            Shubhanshu Gupta<br>
-            Pranay Pourkar<br>
-            Vedant Ranade<br>
-            Anish Gupta<br>
-            Aditya Bastapure<br>
-            Akshay Kulkarni<br>
-            Amit Balki<br>
-            Rahul<br>
-        </div> 
+                     <img src="../assets\img\Flagship_Projects\Turtlebot2\1.jpg" style="float:left;width:40%;height: 400px;">
+                    <img src="../assets\img\Flagship_Projects\Turtlebot2\2.jpg" style="float:right;width:40%;height: 400px;">
+                    <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
+                
+               
+                <p style="text-align: center;">​​Open-source robot development kit for apps on wheels.</p>
+                <br><br>
+                <p style="text-align: center;">TurtleBot is a low-cost, personal robot kit with open-source software. 
+                    With TurtleBot, you’ll be able to build a robot that can drive around your house, 
+                    see in 3D, and have enough horsepower to create exciting applications.</p><br><br>
+                <h2>PROJECTS ON TURTLEBOT SO FAR:</h2>
+                <h3>Line Follower</h3>
+                <p style="width:50%">Developed an algorithm of weighted mean which sets priorties to the near region of turtlebot in captured image.
+                    A web cam is mounted on turtlebot to track the line and according to algorithm it is able to traverse any type of curves.</p>
+                <h3>Navigaton using Parabolic Reflector</h3>
+                <p style="width:50%"> ​Integrated a parabolic mirror to a webcam giving it 360-degree vision. Then using opencv_bridge, image processing is carried out to detect a blue color object in the field of view of the mirror and follow it.
+                </p>
+                <h3>​Autonomous Navigation Using ​Navigation Stack</h3>
+                <p style="width:50%"> Navigation stack, a method to make autonomous robot navigation, is implemented on it. With this, it is able to navigate from one point to another within the map provided. 
+                    G-Mapping is done using Kinect - a 3D depth sensor. Localization in an unknown environment is done using the particle filter method. It uses A* algorithm for path planning.</p>
+                <h3>AutoExMap- Autonomous Exploration and Simultaneous Real-time 3D Map Generation</h3>
+                <p style="width:50%">Implementation of customized Explore_Lite (Frontier-based exploration) and RTabmap packages to create a RGBD map of an unknown environment. A 2D cost-map was also obtained along with a 3D map. 
+                    The ability to autonomously navigate an unknown region to create its depth map can be used for creating depth-map of floors.</p>
+                </div> 
         </section>
             
             
